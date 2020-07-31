@@ -9,7 +9,7 @@ var httpOptions = {headers: new HttpHeaders({"Content-Type": "application/json"}
 @Injectable({
   providedIn: 'root'
 })
-export class PessoaService {
+export class PessoaService { 
   url = 'http://maceiras.myftp.org/api/pessoas';  
   constructor(private http: HttpClient) { }
   getAllPessoas(): Observable<Pessoa[]> {  
