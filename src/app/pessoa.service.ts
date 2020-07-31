@@ -10,7 +10,7 @@ var httpOptions = {headers: new HttpHeaders({"Content-Type": "application/json"}
   providedIn: 'root'
 })
 export class PessoaService {
-  url = 'http://177.138.81.67:8081/api/pessoas';  
+  url = 'http://maceiras.myftp.org/api/pessoas';  
   constructor(private http: HttpClient) { }
   getAllPessoas(): Observable<Pessoa[]> {  
     return this.http.get<Pessoa[]>(this.url);  
